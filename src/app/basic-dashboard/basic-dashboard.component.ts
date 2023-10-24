@@ -7,9 +7,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class BasicDashboardComponent implements OnInit {
 
+  status = false;
   constructor() { }
 
   ngOnInit(): void {
   }
+addToggle()
+{
+  this.status = !this.status;       
+}
 
 }
